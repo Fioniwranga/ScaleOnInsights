@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jimp": "^1.6.1",
+    "potrace": "^2.1.8",
+    "socket.io": "^4.8.3"
+  }
+}
