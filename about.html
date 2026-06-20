@@ -67,9 +67,16 @@
     <div class="hero-bg-glow glow-2" style="display: none;"></div>
 
     <div class="container">
-      <div class="hero-container" style="gap: 20px; grid-template-columns: 1.1fr 0.9fr;">
+      <div class="hero-container" style="gap: 20px; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);">
         <div class="hero-content">
           <style>
+            .hero-content {
+              position: relative;
+              z-index: 5;
+            }
+            .services-hero-title {
+              font-size: clamp(2.2rem, 3.8vw, 3.4rem) !important;
+            }
             .rotating-text {
               display: inline-block;
               color: var(--cyan, #0097A6);

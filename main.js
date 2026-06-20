@@ -3,6 +3,20 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // --- OS-BASED HERO IMAGE DETECTION ---
+  const heroSection = document.getElementById('hero');
+  if (heroSection) {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    const isMac = userAgent.includes('macintosh') || userAgent.includes('mac os x');
+    const isWindows = userAgent.includes('windows') || userAgent.includes('win32') || userAgent.includes('win64');
+    
+    if (isMac) {
+      heroSection.style.backgroundImage = "url('image/MackHero.jpg')";
+    } else if (isWindows) {
+      heroSection.style.backgroundImage = "url('image/WinHero.jpg')";
+    }
+  }
+
   // --- MOBILE NAVIGATION DRAWER ---
   const mobileToggle = document.getElementById('mobile-toggle');
   const primaryNavigation = document.getElementById('primary-navigation');

@@ -226,7 +226,7 @@ img {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(0, 19, 49, 0.95);
+  background-color: rgba(0, 21, 48, 0.95);
   backdrop-filter: blur(8px);
   padding: 16px 0;
   transition: transform 0.3s ease, padding 0.3s ease, background-color 0.3s ease;
@@ -377,7 +377,7 @@ img {
    ========================================== */
 .hero-section {
   position: relative;
-  background-color: var(--primary-navy);
+  background-color: #001530;
   background-image: url('image/Hero.jpg');
   background-size: cover;
   background-position: calc(100% + 50px) center;
@@ -2403,12 +2403,14 @@ img {
   color: #fff;
 }
 
-/* Hide + icon on desktop */
+/* Show + icon on desktop (removed display: none override) */
+/*
 @media (min-width: 993px) {
   .services-page .service-link-label::before {
     display: none !important;
   }
 }
+*/
 
 .service-link-label::after {
   content: '';
@@ -3555,7 +3557,7 @@ img {
   .hero-section {
     position: relative !important;
     background-image: none !important;
-    background-color: var(--primary-navy) !important;
+    background-color: #001530 !important;
     height: 100vh !important;
     height: 100dvh !important;
     min-height: 0 !important;
